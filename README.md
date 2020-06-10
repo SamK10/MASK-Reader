@@ -1,3 +1,3 @@
 # MASK-Reader
 
-Site Link - https://samk10.github.io/MASK-Reader.github.io/
+Site Link - https://samk10.github.io/MASK-Reader/
