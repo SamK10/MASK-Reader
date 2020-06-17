@@ -1,43 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
+
 html, body {
   position: relative;
   height: 100%;
 }
+
 body {
-  background: #ff885d;
+  background: #FFE1E6;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
   color:#000;
   margin: 0;
   padding: 0;
+  height: 100%;
+  min-height: 100%;
 }
+
 header{
   padding-top: 30px;
+  background-color: #F12749;
+  padding-bottom: 15px;
+  flex: auto;
 }
 
 header h1{
   text-align: center;
-  font-size: 55px;
+  font-size: 60px;
   font-family: 'Odibee Sans', cursive;
   letter-spacing: 8px;
   text-shadow: 0 0 50px rgba(198,28,39,0.9), 0 0 0 blue;
   color: white;
   opacity: 0.9;
 }
+
 .swiper-container {
-  width: 700px;
-  height: 65%;
+  width: 1200px;
+  height: 800px;
   margin: auto;
+  flex: auto;
 }
+
 .swiper-wrapper {
   height: 100%;
   margin: auto;
 }
+
 .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #333333;
   margin: auto;
   height: 80%;
+  box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.6);
 
   /* Center slide text vertically */
   display: -webkit-box;
@@ -53,21 +68,106 @@ header h1{
   -webkit-align-items: center;
   align-items: center;
 }
+
+.panels{
+  width: 1000px;
+  /*box-shadow: 8px 0px 10px 1px rgba(0, 0, 0, 0.6);*/
+  transition: 0.5s all ease;
+}
+
 /* custmm bullets style */
 .swiper-pagination-bullet {
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   text-align: center;
-  line-height: 20px;
-  font-size: 12px;
+  line-height: 25px;
+  font-size: 15px;
   color:#fff;
   opacity: 1;
   background: rgba(0,0,0,0.3);
+  transition: 0.5s all ease;
 }
+
 .swiper-pagination-bullet-active {
   color:#fff;
-  background: #ff6600;
+  background: #F12749;
+  color: white;
 }
 .swiper-pagination {
   align-items: stretch;
+}
+
+.swiper-button-next{
+  height: 100px;
+  width: 60px;
+  position: absolute;
+  top: 370px;
+  transition: 0.5s all ease;
+}
+
+.swiper-button-prev{
+  height: 100px;
+  width: 60px;
+  position: absolute;
+  top: 370px;
+  transition: 0.5s all ease;
+}
+
+footer{
+  margin-top: 50px;
+  padding-top: 15px;
+  background-color: #F12749;
+  padding-bottom: 15px;
+  height: 100px;
+}
+
+@media screen and (min-width: 800px) {
+  .swiper-button-next:hover, .swiper-button-prev:hover{
+    background-color: #292727;
+    color: #41FD69;
+  }
+  .swiper-pagination-bullet:hover{
+    background: #FFE1E6;
+    color: #1B0B4A;
+  }  
+}
+
+@media screen and (max-width: 800px) {
+  header h1{
+    font-size: 22px;
+  }
+  .panels {
+    width: 350px;
+  }
+  .swiper-container{
+    width: 100%;
+    height: 430px;
+  }
+  .swiper-wrapper{
+    height: 400px;
+  }
+  .swiper-button-next,.swiper-button-prev{
+    top: 325px;
+    height: 50px;
+  }
+  .swiper-button-next:after,.swiper-button-prev::after{
+    font-size: 20px;
+  }
+  .swiper-button-next:active{
+    background-color: #292727;
+    color: #41FD69;
+  }
+  .swiper-button-prev:active{
+    background-color: #292727;
+    color: #41FD69;
+  }
+  footer{
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 800px) and (min-width: 600px){
+  .panels{
+    width: 80%;
+  }
 }

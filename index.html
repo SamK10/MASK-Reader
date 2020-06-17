@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>Manga Reader</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=3, user-scalable=yes">
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <link rel="stylesheet" href="./style.css">
@@ -12,23 +13,28 @@
 
 <body>
 
-  <header class="head0--active">
+  <header>
     <h1>MANGA AND ANIME SOCIETY KHARAGPUR</h1>
   </header>
 
   <!-- Swiper -->
   <div class="swiper-container">
     <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="./0.png" width="600"></div>
-      <div class="swiper-slide"><img src="./2.png" width="600"></div>
-      <div class="swiper-slide"><img src="./8.png" width="600"></div>
-      <div class="swiper-slide"><img src="./15.png" width="600"></div>
+      <div class="swiper-slide"><img src="./0.png" class="panels"></div>
+      <div class="swiper-slide"><img src="./2.png" class="panels"></div>
+      <div class="swiper-slide"><img src="./8.png" class="panels"></div>
+      <div class="swiper-slide"><img src="./15.png" class="panels"></div>
       <div class="swiper-slide">Slide 5</div>
       <div class="swiper-slide">Slide 6</div>
       <div class="swiper-slide">Slide 7</div>
       <div class="swiper-slide">Slide 8</div>
       <div class="swiper-slide">Slide 9</div>
       <div class="swiper-slide">Slide 10</div>
+      <div class="swiper-slide">Slide 11</div>
+      <div class="swiper-slide">Slide 12</div>
+      <div class="swiper-slide">Slide 13</div>
+      <div class="swiper-slide">Slide 14</div>
+      <div class="swiper-slide">Slide 15</div>
     </div>
     <!-- Add Pagination -->
     <div class="swiper-pagination"></div>
@@ -37,30 +43,15 @@
     <div class="swiper-button-prev"></div>
   </div>
 
+  <footer>
+  </footer>
+
+  <script type="text/javascript" src="jquery-3.4.1.js"></script>
   <!-- Swiper JS -->
   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-
   <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 1,
-      spaceBetween: 20,
-      keyboard: {
-        enabled: true,
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-        renderBullet: function (index, className) {
-          return '<span class="' + className + '">' + (index + 1) + '</span>';
-        }
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
-  </script>
+  <script src="./index.js"></script>
+
 </body>
 
 </html>
