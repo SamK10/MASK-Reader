@@ -222,10 +222,10 @@ footer:after {
     color: #41FD69;
   }
   .swiper-pagination-bullet{
-    height: 18px;
-    width: 18px;
-    line-height: 18px;
-    font-size: 12px;
+    height: 14px;
+    width: 14px;
+    line-height: 14px;
+    font-size: 9px;
   }
   footer{
     margin-top: 40px;

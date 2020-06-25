@@ -2,82 +2,446 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>Manga Reader</title>
-  <meta name="viewport"
-    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=3, user-scalable=yes">
-  <!-- Link Swiper's CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="./style.css">
+	<meta charset="utf-8">
+	<title>Manga Reader</title>
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=3, user-scalable=yes">
+	<!-- Link Swiper's CSS -->
+	<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="./pre.css">
 </head>
 
 <body>
+	<div id="loaderasd" style="display: flex; align-items: center;">
+		<div class="cssload-dots">
+			<div class="cssload-dot"></div>
+			<div class="cssload-dot"></div>
+			<div class="cssload-dot"></div>
+			<div class="cssload-dot"></div>
+			<div class="cssload-dot"></div>
+		</div>
 
-  <header>
-    <h1>MANGA AND ANIME SOCIETY KHARAGPUR</h1>
-  </header>
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+			<defs>
+				<filter id="goo">
+					<feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="12"></feGaussianBlur>
+					<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0	0 1 0 0 0	0 0 1 0 0	0 0 0 18 -7"
+						result="goo"></feColorMatrix>
+					<!--<feBlend in2="goo" in="SourceGraphic" result="mix" ></feBlend>-->
+				</filter>
+			</defs>
+		</svg>
+	</div>
 
-  <!-- Swiper -->
-  <div class="swiper-container">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="./0.png" class="panels"></div>
-      <div class="swiper-slide"><img src="./2.png" class="panels"></div>
-      <div class="swiper-slide"><img src="./8.png" class="panels"></div>
-      <div class="swiper-slide"><img src="./15.png" class="panels"></div>
-      <div class="swiper-slide">Slide 5</div>
-      <div class="swiper-slide">Slide 6</div>
-      <div class="swiper-slide">Slide 7</div>
-      <div class="swiper-slide">Slide 8</div>
-      <div class="swiper-slide">Slide 9</div>
-      <div class="swiper-slide">Slide 10</div>
-      <div class="swiper-slide">Slide 11</div>
-      <div class="swiper-slide">Slide 12</div>
-      <div class="swiper-slide">Slide 13</div>
-      <div class="swiper-slide">Slide 14</div>
-      <div class="swiper-slide">Slide 15</div>
-    </div>
-    <!-- Add Pagination -->
-    <div class="swiper-pagination"></div>
-    <!-- Add Arrows -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-  </div>
+	<div style="visibility: hidden;" id="contenterDiv">
 
-  <footer>
+		<header>
+			<h1>MANGA AND ANIME SOCIETY KHARAGPUR</h1>
+		</header>
 
-    <div class="footer-col">
-      <a href="https://www.maskiitkgp.co/" target="_blank"><img src="pp.jpg" class="footer-logo"></a>
-    </div>
-    <div class="footer-col">
-      <h3>Check out the official website of Manga and Anime Society Kharagpur (MASK) - A group of Anime and Manga enthusiasts.</h3>
-      <h3>Stay upadted with our new AMV's, Fan Arts and Manga.</h3>
-    </div>
-    <div class="footer-col">
-      <h2>Follow Us</h2>
-      <hr width="70%">
-      <div class="footer-icons">
-        <a href="https://www.facebook.com/maskiitkgp" target="_blank"><i class="fa fa-facebook-official"></i></a>
-        <a href="https://www.youtube.com/channel/UCVYGmPrKHFPKKzO0lb-XM_Q/featured" target="_blank"><i class="fa fa-youtube"></i></a>
-        <a href="https://www.instagram.com/maskiitkgp/" target="_blank"><i class="fa fa-instagram"></i></a>
-      </div>
-    </div>
-    <div class="footer-col">
-      <h2>Webpage Credits</h2>
-      <hr width="70%">
-      <a href="https://www.facebook.com/samk1003" target="_blank"><p class="footer-credits">Samir Kumar</p></a>
-      <a href="https://www.facebook.com/pritam.mallick.1401" target="_blank"><p class="footer-credits">Pritam Mallick</p></a>
-      <a href="https://www.facebook.com/divyanshishusingh" target="_blank"><p class="footer-credits">Divyansh Singh</p></a>
-    </div>
+		<!-- Swiper -->
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img data-src="./pages/evergreen-fabrics/00.png" alt-src="pp.png" class="swiper-lazy panels">
+					<div class="swiper-lazy-preloader">
+						<div class="cssload-dots">
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<img data-src="./pages/evergreen-fabrics/01.png" alt-src="pp.png" class="swiper-lazy panels">
+					<div class="swiper-lazy-preloader">
+						<div class="cssload-dots">
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<img data-src="./pages/evergreen-fabrics/02.png" alt-src="pp.png" class="swiper-lazy panels">
+					<div class="swiper-lazy-preloader">
+						<div class="cssload-dots">
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<img data-src="./pages/evergreen-fabrics/03.png" alt-src="pp.png" class="swiper-lazy panels">
+					<div class="swiper-lazy-preloader">
+						<div class="cssload-dots">
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<img data-src="./pages/evergreen-fabrics/04.png" alt-src="pp.png" class="swiper-lazy panels">
+					<div class="swiper-lazy-preloader">
+						<div class="cssload-dots">
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<img data-src="./pages/evergreen-fabrics/05.png" alt-src="pp.png" class="swiper-lazy panels">
+					<div class="swiper-lazy-preloader">
+						<div class="cssload-dots">
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<img data-src="./pages/evergreen-fabrics/06.png" alt-src="pp.png" class="swiper-lazy panels">
+					<div class="swiper-lazy-preloader">
+						<div class="cssload-dots">
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<img data-src="./pages/evergreen-fabrics/07.png" alt-src="pp.png" class="swiper-lazy panels">
+					<div class="swiper-lazy-preloader">
+						<div class="cssload-dots">
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<img data-src="./pages/evergreen-fabrics/08.png" alt-src="pp.png" class="swiper-lazy panels">
+					<div class="swiper-lazy-preloader">
+						<div class="cssload-dots">
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<img data-src="./pages/evergreen-fabrics/09.png" alt-src="pp.png" class="swiper-lazy panels">
+					<div class="swiper-lazy-preloader">
+						<div class="cssload-dots">
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<img data-src="./pages/evergreen-fabrics/10.png" alt-src="pp.png" class="swiper-lazy panels">
+					<div class="swiper-lazy-preloader">
+						<div class="cssload-dots">
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<img data-src="./pages/evergreen-fabrics/11.png" alt-src="pp.png" class="swiper-lazy panels">
+					<div class="swiper-lazy-preloader">
+						<div class="cssload-dots">
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<img data-src="./pages/evergreen-fabrics/12.png" alt-src="pp.png" class="swiper-lazy panels">
+					<div class="swiper-lazy-preloader">
+						<div class="cssload-dots">
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<img data-src="./pages/evergreen-fabrics/13.png" alt-src="pp.png" class="swiper-lazy panels">
+					<div class="swiper-lazy-preloader">
+						<div class="cssload-dots">
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<img data-src="./pages/evergreen-fabrics/14.png" alt-src="pp.png" class="swiper-lazy panels">
+					<div class="swiper-lazy-preloader">
+						<div class="cssload-dots">
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<img data-src="./pages/evergreen-fabrics/15.png" alt-src="pp.png" class="swiper-lazy panels">
+					<div class="swiper-lazy-preloader">
+						<div class="cssload-dots">
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<img data-src="./pages/evergreen-fabrics/16.png" alt-src="pp.png" class="swiper-lazy panels">
+					<div class="swiper-lazy-preloader">
+						<div class="cssload-dots">
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<img data-src="./pages/evergreen-fabrics/17.png" alt-src="pp.png" class="swiper-lazy panels">
+					<div class="swiper-lazy-preloader">
+						<div class="cssload-dots">
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<img data-src="./pages/evergreen-fabrics/18.png" alt-src="pp.png" class="swiper-lazy panels">
+					<div class="swiper-lazy-preloader">
+						<div class="cssload-dots">
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<img data-src="./pages/evergreen-fabrics/19.png" alt-src="pp.png" class="swiper-lazy panels">
+					<div class="swiper-lazy-preloader">
+						<div class="cssload-dots">
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<img data-src="./pages/evergreen-fabrics/20.png" alt-src="pp.png" class="swiper-lazy panels">
+					<div class="swiper-lazy-preloader">
+						<div class="cssload-dots">
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<img data-src="./pages/evergreen-fabrics/21.png" alt-src="pp.png" class="swiper-lazy panels">
+					<div class="swiper-lazy-preloader">
+						<div class="cssload-dots">
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<img data-src="./pages/evergreen-fabrics/22.png" alt-src="pp.png" class="swiper-lazy panels">
+					<div class="swiper-lazy-preloader">
+						<div class="cssload-dots">
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<img data-src="./pages/evergreen-fabrics/23.png" alt-src="pp.png" class="swiper-lazy panels">
+					<div class="swiper-lazy-preloader">
+						<div class="cssload-dots">
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<img data-src="./pages/evergreen-fabrics/24.png" alt-src="pp.png" class="swiper-lazy panels">
+					<div class="swiper-lazy-preloader">
+						<div class="cssload-dots">
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<img data-src="./pages/evergreen-fabrics/25.png" alt-src="pp.png" class="swiper-lazy panels">
+					<div class="swiper-lazy-preloader">
+						<div class="cssload-dots">
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<img data-src="./pages/evergreen-fabrics/26.png" alt-src="pp.png" class="swiper-lazy panels">
+					<div class="swiper-lazy-preloader">
+						<div class="cssload-dots">
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<img data-src="./pages/evergreen-fabrics/27.png" alt-src="pp.png" class="swiper-lazy panels">
+					<div class="swiper-lazy-preloader">
+						<div class="cssload-dots">
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+							<div class="cssload-dot"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Add Pagination -->
+			<div class="swiper-pagination"></div>
+			<!-- Add Arrows -->
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+		</div>
 
-  </footer>
+		<footer>
 
-  <script type="text/javascript" src="jquery-3.4.1.js"></script>
-  <!-- Swiper JS -->
-  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-  <!-- Initialize Swiper -->
-  <script src="./index.js"></script>
+			<div class="footer-col">
+				<a href="https://www.maskiitkgp.co/" target="_blank"><img src="pp.gif" class="footer-logo"></a>
+			</div>
+			<div class="footer-col">
+				<h3>Check out the official website of Manga and Anime Society Kharagpur (MASK) - A group of Anime and
+					Manga enthusiasts.</h3>
+				<h3>Stay upadted with our new AMV's, Fan Arts and Manga.</h3>
+			</div>
+			<div class="footer-col">
+				<h2>Follow Us</h2>
+				<hr width="70%">
+				<div class="footer-icons">
+					<a href="https://www.facebook.com/maskiitkgp" target="_blank"><i
+							class="fa fa-facebook-official"></i></a>
+					<a href="https://www.youtube.com/channel/UCVYGmPrKHFPKKzO0lb-XM_Q/featured" target="_blank"><i
+							class="fa fa-youtube"></i></a>
+					<a href="https://www.instagram.com/maskiitkgp/" target="_blank"><i class="fa fa-instagram"></i></a>
+				</div>
+			</div>
+			<div class="footer-col">
+				<h2>Webpage Credits</h2>
+				<hr width="70%">
+				<a href="https://www.facebook.com/samk1003" target="_blank">
+					<p class="footer-credits">Samir Kumar</p>
+				</a>
+				<a href="https://www.facebook.com/pritam.mallick.1401" target="_blank">
+					<p class="footer-credits">Pritam Mallick</p>
+				</a>
+				<a href="https://www.facebook.com/divyanshishusingh" target="_blank">
+					<p class="footer-credits">Divyansh Singh</p>
+				</a>
+			</div>
 
+		</footer>
+		<script type="text/javascript" src="jquery-3.4.1.js"></script>
+		<!-- Swiper JS -->
+		<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+		<!-- Initialize Swiper -->
+		<script src="./index.js"></script>
+	</div>
+	<script>
+		var myVar = setTimeout(showPage, 500);
+
+		function myFunction() {
+			myVar = setTimeout(showPage, 5000);
+		}
+
+		function showPage() {
+			document.getElementById("loaderasd").style.display = "none";
+			document.getElementById("contenterDiv").style.visibility = "visible";
+		}
+	</script>
 </body>
 
 </html>

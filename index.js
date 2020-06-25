@@ -1,6 +1,12 @@
 var swiper = new Swiper('.swiper-container', {
+    preloadImages: false,
+    lazy: {
+        enabled: true,
+        loadPrevNext: true,
+    },
     slidesPerView: 1,
     spaceBetween: 20,
+    zoom: true,
     keyboard: {
         enabled: true,
     },
